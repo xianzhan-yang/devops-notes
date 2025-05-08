@@ -86,12 +86,8 @@ sudo cat /etc/gitlab/initial_root_password
 
 This token will use in jenkins.
 
-- Step 1: Open User Icons, Select **Edit profile**
 ![image](assets/images/edit-profile.png)
-- Step 2: Click **Access tokens**
 ![image](assets/images/access-tokens.png)
-- Step 3: Click **Add new token**
-- Step 4: Input Information 
 ![image](assets/images/add-a-personal-access-token)
 
 ---
@@ -121,3 +117,5 @@ This token will use in jenkins.
 ![image](assets/images/trigger.png)
 ![image](assets/images/ssl.png)
 ![image](assets/images/test.png)
+
+---
