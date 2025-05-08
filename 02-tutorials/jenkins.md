@@ -97,8 +97,6 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ### Credentials
 
-Put gitlab access tokens (you can review gitlab.md document)
-
 ![image](assets/images/add-credentials.png)
 ![image](assets/images/new-credentials.png)
 
@@ -109,7 +107,7 @@ Put gitlab access tokens (you can review gitlab.md document)
 #### GitLab
 
 ![image](assets/images/gitlab.png)
-![image](assets/images/test-configuration.png)
+![image](assets/images/test-connection.png)
 
 ---
 
@@ -124,3 +122,5 @@ GitLab webhook URL is very important, we will use in GitLab configuration
 
 ![image](assets/images/triggers.png)
 ![image](assets/images/pipeline.png)
+
+---
