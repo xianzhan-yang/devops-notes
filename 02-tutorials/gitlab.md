@@ -88,7 +88,7 @@ This token will use in jenkins.
 
 ![image](assets/images/edit-profile.png)
 ![image](assets/images/access-tokens.png)
-![image](assets/images/add-a-personal-access-token)
+![image](assets/images/add-a-personal-access-token.png)
 
 ---
 
