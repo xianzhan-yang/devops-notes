@@ -247,17 +247,3 @@ java -Djenkins.install.runSetupWizard=false -Dcascade.config=jenkins.yaml -jar j
 - Use in 3 different pipelines
 
 ---
-
-## ✅ Summary: What You Master at This Level
-
-| Topic                             | Mastery |
-| --------------------------------- | ------- |
-| Shared Pipeline Libraries         | ✅       |
-| Docker Build + Deploy             | ✅       |
-| K8s Agent Integration             | ✅       |
-| Dynamic / Config-driven Pipelines | ✅       |
-| Jenkins Config as Code (JCasC)    | ✅       |
-| Security Best Practices           | ✅       |
-| Enterprise Pipeline Patterns      | ✅       |
-
----

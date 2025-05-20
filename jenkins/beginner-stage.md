@@ -133,17 +133,3 @@ print("Hello, Jenkins!")
   - Success = log prints "Hello, Jenkins!"
 
 ---
-
-## ✅ Summary: What You Should Know After This Stage
-
-| Topic                            | Status ✅ |
-| -------------------------------- | -------- |
-| Understand Jenkins & CI/CD       | ✅        |
-| Install Jenkins & access UI      | ✅        |
-| Create & run Freestyle Jobs      | ✅        |
-| Pull code from Git               | ✅        |
-| Execute build/test scripts       | ✅        |
-| Install & use plugins            | ✅        |
-| Send email and save build output | ✅        |
-
----

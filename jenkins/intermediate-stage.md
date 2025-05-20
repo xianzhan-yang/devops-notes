@@ -226,16 +226,3 @@ pipeline {
 ```
 
 ---
-
-## ✅ After Completing Intermediate Stage, You Can:
-
-| Skill                               | Status |
-| ----------------------------------- | ------ |
-| Write Declarative Pipelines         | ✅      |
-| Use Parameters in Jobs              | ✅      |
-| Securely use credentials            | ✅      |
-| Run parallel and multi-agent builds | ✅      |
-| Install and use useful plugins      | ✅      |
-| Automate full CI pipelines          | ✅      |
-
----
