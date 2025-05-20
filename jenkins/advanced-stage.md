@@ -228,7 +228,7 @@ java -Djenkins.install.runSetupWizard=false -Dcascade.config=jenkins.yaml -jar j
 
 ---
 
-## 🧪 Advanced Practice Projects
+## ✅ 8. Practice Projects
 
 **🔧 Project 1: Docker-based CI/CD**
 
