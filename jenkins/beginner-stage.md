@@ -34,16 +34,12 @@ Set up Jenkins and access the web dashboard.
 | **Native Install**          | Long-term or production use              | Download `.war`, `.msi`, or `.pkg` from [https://www.jenkins.io/download](https://www.jenkins.io/download) and install accordingly. |
 | **WAR File**                | Lightweight, portable, no install needed | `java -jar jenkins.war` |
 
-**🚀 First-Time Setup**
+**🚀 First-Time Setup:**
 
-1. Access Jenkins UI: Open your browser and go to: http://localhost:8080
-2. Unlock Jenkins:
-- If using Docker: Run docker logs <container_id> Look for the line with Please use the following password to proceed to installation.
-- If installed manually: Check file at ~/.jenkins/secrets/initialAdminPassword
-3. Install Plugins:
-- Choose Install suggested plugins (recommended for most users).
-4. Create Admin User:
-- Fill in username, password, and email to set up your admin account.
+- Access http://localhost:8080
+- Enter admin password (from file or Docker logs)
+- Install suggested plugins
+- Create an admin user
 
 ---
 
