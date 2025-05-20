@@ -6,7 +6,7 @@
 
 **🎯 Goal:**
 
-Avoid repeating code across Jenkinsfiles by creating custom, version-controlled pipeline libraries.
+Avoid repeating code across Jenkinsfiles by creating **custom**, **version-controlled pipeline libraries**.
 
 **📌 Key Concepts:**
 
@@ -58,7 +58,7 @@ pipeline {
 
 **🎯 Goal:**
 
-Run builds inside Docker containers or use Jenkins to build/push Docker images.
+Run builds **inside Docker containers** or use Jenkins to **build/push Docker images**.
 
 **🔧 Use Cases:**
 
@@ -101,7 +101,7 @@ Scale Jenkins agents dynamically using Kubernetes and deploy apps to K8s cluster
 
 **✅ Approaches:**
 
-- Use the Kubernetes plugin to spawn Jenkins agents (Pods) on-demand.
+- Use the **Kubernetes plugin** to spawn Jenkins agents (Pods) on-demand.
 - Deploy Jenkins inside Kubernetes as a service (via Helm).
 - Use Kubernetes secrets/configmaps inside your pipeline.
 
@@ -153,7 +153,7 @@ Generate pipelines dynamically or drive behavior with configuration files (YAML/
 
 **💡 Technique:**
 
-Use load, evaluate, or JSON/YAML parsers to drive logic.
+Use **load**, **evaluate**, or JSON/YAML parsers to drive logic.
 
 **Example: Load pipeline steps from JSON**
 
@@ -178,7 +178,7 @@ Version-control Jenkins setup (users, jobs, plugins) using YAML.
 
 **🔧 Plugin:**
 
-- Configuration as Code (JCasC) plugin
+- **Configuration as Code (JCasC)** plugin
 
 **📄 Example: jenkins.yaml**
 
@@ -206,12 +206,12 @@ java -Djenkins.install.runSetupWizard=false -Dcascade.config=jenkins.yaml -jar j
 
 **🔐 Key Topics:**
 
-- Use folders and role-based access control (RBAC) via plugins
-- Use Credentials Binding (never hardcode secrets)
-- Enable audit logging
+- Use **folders and role-based access control (RBAC)** via plugins
+- Use **Credentials Binding** (never hardcode secrets)
+- Enable **audit logging**
 - Limit agent shell access
-- Use HTTPS, reverse proxy, and firewalls
-- Run Jenkins with limited privileges
+- Use **HTTPS**, reverse proxy, and firewalls
+- Run Jenkins with **limited privileges**
 - Regularly update plugins and Jenkins core
 
 ---
@@ -220,11 +220,11 @@ java -Djenkins.install.runSetupWizard=false -Dcascade.config=jenkins.yaml -jar j
 
 **📦 Strategies:**
 
-- Multi-branch pipelines: Automatically build every branch or PR
-- Matrix builds: Test across OS, Node.js versions, etc.
-- Approval gates: Require manual approval for production deploy
-- Audit-ready logging: Centralized log collection (e.g., ELK stack)
-- Integration with GitHub/GitLab/Bitbucket, Slack, Jira
+- **Multi-branch pipelines**: Automatically build every branch or PR
+- **Matrix builds**: Test across OS, Node.js versions, etc.
+- **Approval gates**: Require manual approval for production deploy
+- **Audit-ready logging**: Centralized log collection (e.g., ELK stack)
+- **Integration with GitHub/GitLab/Bitbucket**, Slack, Jira
 
 ---
 
