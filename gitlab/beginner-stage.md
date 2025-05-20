@@ -1,6 +1,6 @@
 # 🟢 Beginner Stage: GitLab Basics
 
-**🎯 Goal:
+**🎯 Goal:**
 
 Understand how to use GitLab as a Git repository platform, collaborate with others, and manage your code using basic Git operations and GitLab features.
 
