@@ -1,24 +1,21 @@
-# 🚀 Intermediate Stage: Jenkins Pipelines & Automation Workflows
+# Intermediate Stage: Jenkins Pipelines & Automation Workflows
 
 ---
 
-## ✅ 1. Jenkins Pipeline Basics
+## 1. Jenkins Pipeline Basics
 
-**🎯 Goal:**
-
+Goal:
 Move from basic Freestyle jobs to code-driven, flexible automation using Pipelines.
 
-**📌 What is a Pipeline?**
-
+What is a Pipeline?
 - A **Pipeline** defines the entire build process using code.
 - Stored in a Jenkinsfile, version-controlled with your project.
 - Two syntax styles:
   - **Declarative Pipeline** (easier, recommended)
   - **Scripted Pipeline** (more flexible, advanced use)
 
-**🧾 Declarative Pipeline Example:**
-
-```bash
+Declarative Pipeline Example:
+```groovy
 pipeline {
   agent any
   stages {
@@ -41,8 +38,7 @@ pipeline {
 }
 ```
 
-**📍 Steps:**
-
+Steps:
 - Create a **Jenkinsfile** in your repo
 - In Jenkins, create a **Pipeline project**
 - Configure Git repo – Jenkins auto-detects and runs the **Jenkinsfile**
@@ -51,21 +47,18 @@ pipeline {
 
 ## ✅ 2. Parameterized Builds
 
-**🎯 Goal:**
-
+Goal:
 Allow users to input values when triggering a job (e.g., environment, version).
 
-**🔧 How:**
-
+How:
 - Enable "This project is parameterized" in job config
 - Add parameters like:
   - String Parameter – for version numbers
   - Choice Parameter – select between dev/staging/prod
   - Boolean Parameter – toggle options (e.g., run tests?)
 
-**💡 Pipeline with Parameters:**
-
-```bash
+Pipeline with Parameters:
+```groovy
 pipeline {
   agent any
   parameters {
@@ -84,23 +77,20 @@ pipeline {
 
 ---
 
-## ✅ 3. Credentials Management
+## 3. Credentials Management
 
-**🎯 Goal:**
-
+Goal:
 Securely store and access API keys, passwords, and SSH credentials.
 
-**🔧 Setup:**
-
+Setup:
 - Go to **Manage Jenkins** → **Credentials**
 - Add credentials:
   - Username & Password
   - Secret text
   - SSH private key
 
-**💡 Using in Pipeline:**
-
-```bash
+Using in Pipeline:
+```groovy
 pipeline {
   agent any
   stages {
@@ -117,20 +107,17 @@ pipeline {
 
 ---
 
-## ✅ 4. Parallel & Distributed Builds
+## 4. Parallel & Distributed Builds
 
-**🎯 Goal:**
-
+Goal:
 Improve performance by running jobs in parallel or on multiple Jenkins agents.
 
-**📌 Key Concepts:**
-
+Key Concepts:
 - **Agent/Node**: Jenkins worker machine that runs jobs.
 - **Labels**: Tags to assign jobs to specific types of agents (e.g., linux, windows).
 
-**💡 Run on Specific Node:**
-
-```bash
+Run on Specific Node:
+```groovy
 pipeline {
   agent { label 'linux' }
   stages {
@@ -143,9 +130,8 @@ pipeline {
 }
 ```
 
-**💡 Parallel Execution:**
-
-```bash
+Parallel Execution:
+```groovy
 stage('Test') {
   parallel {
     stage('Unit Tests') {
@@ -164,7 +150,7 @@ stage('Test') {
 
 ---
 
-## ✅ 5. Recommended Plugins (Intermediate Level)
+## 5. Recommended Plugins (Intermediate Level)
 
 | Plugin                     | Purpose                                  |
 | -------------------------- | ---------------------------------------- |
@@ -176,10 +162,9 @@ stage('Test') {
 
 ---
 
-## ✅ 6. Practice Projects
+## 6. Practice Projects
 
-**💡 Project: Full CI Pipeline for Node.js**
-
+Project: Full CI Pipeline for Node.js
 Steps:
 1. Checkout Git repository
 2. Install dependencies
@@ -187,9 +172,8 @@ Steps:
 4. Build and archive artifacts
 5. Conditional deploy to staging
 
-**🧾 Sample Jenkinsfile:**
-
-```bash
+Sample Jenkinsfile:
+```groovy
 pipeline {
   agent any
   environment {

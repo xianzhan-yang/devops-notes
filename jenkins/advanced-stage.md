@@ -1,22 +1,19 @@
-# 🧠 Advanced Stage: Jenkins for Scalable, Secure, and Enterprise Automation
+# Advanced Stage: Jenkins for Scalable, Secure, and Enterprise Automation
 
 ---
 
-## ✅ 1. Shared Libraries (Reusable Pipeline Code)
+## 1. Shared Libraries (Reusable Pipeline Code)
 
-**🎯 Goal:**
-
+Goal:
 Avoid repeating code across Jenkinsfiles by creating **custom**, **version-controlled pipeline libraries**.
 
-**📌 Key Concepts:**
-
+Key Concepts:
 - Shared libraries allow you to define:
   - Common functions (e.g., deployApp())
   - Custom steps and utilities
 - Located in a separate Git repo, loaded into Jenkins globally
 
-**📁 Structure:**
-
+Structure:
 ```text
 (root)
 ├── vars/
@@ -28,16 +25,14 @@ Avoid repeating code across Jenkinsfiles by creating **custom**, **version-contr
     └── templates/deploy.yaml
 ```
 
-**📄 Example (vars/sayHello.groovy):**
-
+Example (vars/sayHello.groovy):
 ```groovy
 def call(String name = 'World') {
     echo "Hello, ${name}!"
 }
 ```
 
-**📄 In your Jenkinsfile:**
-
+In your Jenkinsfile:
 ```groovy
 @Library('my-shared-lib') _
 pipeline {
@@ -54,20 +49,17 @@ pipeline {
 
 ---
 
-## ✅ 2. Jenkins + Docker Integration
+## 2. Jenkins + Docker Integration
 
-**🎯 Goal:**
-
+Goal:
 Run builds **inside Docker containers** or use Jenkins to **build/push Docker images**.
 
-**🔧 Use Cases:**
-
+Use Cases:
 - Isolate environments
 - Build and test inside containers
 - Publish to DockerHub or private registry
 
-**🧾 Example: Build Docker Image in Pipeline**
-
+Example: Build Docker Image in Pipeline
 ```groovy
 pipeline {
   agent any
@@ -93,20 +85,17 @@ pipeline {
 
 ---
 
-## ✅ 3. Jenkins + Kubernetes Integration (Jenkins X / Cloud-native)
+## 3. Jenkins + Kubernetes Integration (Jenkins X / Cloud-native)
 
-**🎯 Goal:**
-
+Goal:
 Scale Jenkins agents dynamically using Kubernetes and deploy apps to K8s clusters.
 
-**✅ Approaches:**
-
+Approaches:
 - Use the **Kubernetes plugin** to spawn Jenkins agents (Pods) on-demand.
 - Deploy Jenkins inside Kubernetes as a service (via Helm).
 - Use Kubernetes secrets/configmaps inside your pipeline.
 
-**🧾 Sample Agent Declaration:**
-
+Sample Agent Declaration:
 ```groovy
 pipeline {
   agent {
@@ -140,23 +129,18 @@ pipeline {
 
 ---
 
-## ✅ 4. Dynamic Pipelines & Templating
+## 4. Dynamic Pipelines & Templating
 
-**🎯 Goal:**
-
+Goal:
 Generate pipelines dynamically or drive behavior with configuration files (YAML/JSON).
 
-**🔧 Use Cases:**
-
+Use Cases:
 - Multi-project pipeline template
 - Environment-driven stages
 
-**💡 Technique:**
-
+Technique:
 Use **load**, **evaluate**, or JSON/YAML parsers to drive logic.
-
-**Example: Load pipeline steps from JSON**
-
+Example: Load pipeline steps from JSON
 ```groovy
 def config = readJSON file: 'pipeline.json'
 for (stage in config.stages) {
@@ -170,19 +154,15 @@ for (stage in config.stages) {
 
 ---
 
-## ✅ 5. Jenkins Configuration as Code (JCasC)
+## 5. Jenkins Configuration as Code (JCasC)
 
-**🎯 Goal:**
-
+Goal:
 Version-control Jenkins setup (users, jobs, plugins) using YAML.
 
-**🔧 Plugin:**
-
+Plugin:
 - **Configuration as Code (JCasC)** plugin
-
-**📄 Example: jenkins.yaml**
-
-```bash
+Example: jenkins.yaml
+```yaml
 jenkins:
   systemMessage: "Configured by JCasC"
   securityRealm:
@@ -195,17 +175,14 @@ jenkins:
     loggedInUsersCanDoAnything:
       allowAnonymousRead: false
 ```
-
 - Auto-load with:
-
 java -Djenkins.install.runSetupWizard=false -Dcascade.config=jenkins.yaml -jar jenkins.war
 
 ---
 
-## ✅ 6. Security Hardening (Advanced Best Practices)
+## 6. Security Hardening (Advanced Best Practices)
 
-**🔐 Key Topics:**
-
+Key Topics:
 - Use **folders and role-based access control (RBAC)** via plugins
 - Use **Credentials Binding** (never hardcode secrets)
 - Enable **audit logging**
@@ -216,10 +193,9 @@ java -Djenkins.install.runSetupWizard=false -Dcascade.config=jenkins.yaml -jar j
 
 ---
 
-## ✅ 7. Enterprise CI/CD Patterns
+## 7. Enterprise CI/CD Patterns
 
-**📦 Strategies:**
-
+Strategies:
 - **Multi-branch pipelines**: Automatically build every branch or PR
 - **Matrix builds**: Test across OS, Node.js versions, etc.
 - **Approval gates**: Require manual approval for production deploy
@@ -228,21 +204,18 @@ java -Djenkins.install.runSetupWizard=false -Dcascade.config=jenkins.yaml -jar j
 
 ---
 
-## ✅ 8. Practice Projects
+## 8. Practice Projects
 
-**🔧 Project 1: Docker-based CI/CD**
-
+Project 1: Docker-based CI/CD
 - Build & test app inside Docker container
 - Push image to DockerHub
 - Deploy image to staging via SSH
 
-**☸️ Project 2: Kubernetes Native Pipeline**
-
+Project 2: Kubernetes Native Pipeline
 - Jenkins deployed in K8s
 - Pipeline builds Helm chart & deploys to dev cluster
 
-**🧬 Project 3: Shared Library CI**
-
+Project 3: Shared Library CI
 - Extract repeated stages (checkoutCode, buildApp) to a shared repo
 - Use in 3 different pipelines
 
