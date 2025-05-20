@@ -10,11 +10,11 @@ Move from basic Freestyle jobs to code-driven, flexible automation using Pipelin
 
 **📌 What is a Pipeline?**
 
-- A Pipeline defines the entire build process using code.
+- A **Pipeline** defines the entire build process using code.
 - Stored in a Jenkinsfile, version-controlled with your project.
 - Two syntax styles:
-  - Declarative Pipeline (easier, recommended)
-  - Scripted Pipeline (more flexible, advanced use)
+  - **Declarative Pipeline** (easier, recommended)
+  - **Scripted Pipeline** (more flexible, advanced use)
 
 **🧾 Declarative Pipeline Example:**
 
@@ -43,9 +43,9 @@ pipeline {
 
 **📍 Steps:**
 
-- Create a Jenkinsfile in your repo
-- In Jenkins, create a Pipeline project
-- Configure Git repo – Jenkins auto-detects and runs the Jenkinsfile
+- Create a **Jenkinsfile** in your repo
+- In Jenkins, create a **Pipeline project**
+- Configure Git repo – Jenkins auto-detects and runs the **Jenkinsfile**
 
 ---
 
@@ -92,7 +92,7 @@ Securely store and access API keys, passwords, and SSH credentials.
 
 **🔧 Setup:**
 
-- Go to Manage Jenkins → Credentials
+- Go to **Manage Jenkins** → **Credentials**
 - Add credentials:
   - Username & Password
   - Secret text
@@ -125,8 +125,8 @@ Improve performance by running jobs in parallel or on multiple Jenkins agents.
 
 **📌 Key Concepts:**
 
-- Agent/Node: Jenkins worker machine that runs jobs.
-- Labels: Tags to assign jobs to specific types of agents (e.g., linux, windows).
+- **Agent/Node**: Jenkins worker machine that runs jobs.
+- **Labels**: Tags to assign jobs to specific types of agents (e.g., linux, windows).
 
 **💡 Run on Specific Node:**
 
