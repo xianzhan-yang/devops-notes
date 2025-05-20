@@ -34,12 +34,16 @@ Set up Jenkins and access the web dashboard.
 | **Native Install**          | Long-term or production use              | Download `.war`, `.msi`, or `.pkg` from [https://www.jenkins.io/download](https://www.jenkins.io/download) and install accordingly. |
 | **WAR File**                | Lightweight, portable, no install needed | `java -jar jenkins.war` |
 
-**🚀 First-Time Setup:**
+**🚀 First-Time Setup**
 
-- Access http://localhost:8080
-- Enter admin password (from file or Docker logs)
-- Install suggested plugins
-- Create an admin user
+1. Access Jenkins UI: Open your browser and go to: http://localhost:8080
+2. Unlock Jenkins:
+- If using Docker: Run docker logs <container_id> Look for the line with Please use the following password to proceed to installation.
+- If installed manually: Check file at ~/.jenkins/secrets/initialAdminPassword
+3. Install Plugins:
+- Choose Install suggested plugins (recommended for most users).
+4. Create Admin User:
+- Fill in username, password, and email to set up your admin account.
 
 ---
 
@@ -51,10 +55,10 @@ Get familiar with Jenkins dashboard and key navigation areas.
 
 **🖥️ Key Sections:**
 
-- Dashboard: Your list of jobs
-- Manage Jenkins: Global config and plugin manager
-- New Item: Create a new job
-- Build History: View logs of past runs
+- **Dashboard**: Your list of jobs
+- **Manage Jenkins**: Global config and plugin manager
+- **New Item**: Create a new job
+- **Build History**: View logs of past runs
 
 ---
 
@@ -66,12 +70,12 @@ Create a basic Jenkins job, connect to Git, and automate a build step.
 
 **🛠 Steps:**
 
-1. Click “New Item” → Name your job → Choose Freestyle project
+1. Click “**New Item**” → Name your job → Choose **Freestyle project**
 2. Configure:
-- Source Code Management: Use Git, e.g. https://github.com/yourname/yourproject.git
-- Build Triggers: How the build is triggered (manually, on schedule, or on Git changes)
-- Build Steps: Shell script or batch file Example: npm install && npm test
-- Post-build Actions: Email, archive artifacts, etc.
+- **Source Code Management**: Use Git, e.g. https://github.com/yourname/yourproject.git
+- **Build Triggers**: How the build is triggered (manually, on schedule, or on Git changes)
+- **Build Steps**: Shell script or batch file Example: npm install && npm test
+- **Post-build Actions**: Email, archive artifacts, etc.
 
 **🧪 Practice Suggestion:**
 
@@ -91,7 +95,7 @@ Learn how to extend Jenkins functionality.
 
 **📦 How to Manage Plugins:**
 
-- Go to Manage Jenkins → Plugin Manager
+- Go to **Manage Jenkins** → **Plugin Manager**
 - You can install, update, or remove plugins.
 
 **🔌 Useful Plugins:**
@@ -109,7 +113,7 @@ Learn how to extend Jenkins functionality.
 
 **📧 Email Notification:**
 
-- Configure SMTP in: Manage Jenkins → Configure System
+- Configure SMTP in: **Manage Jenkins** → **Configure System**
 - Add email post-build actions in the job.
 
 
