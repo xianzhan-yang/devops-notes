@@ -1,6 +1,6 @@
-# 🟡 Intermediate Stage: GitLab CI/CD & Pipelines
+# Intermediate Stage: GitLab CI/CD & Pipelines
 
-**🎯 Goal:**
+**Goal**
 
 Master GitLab CI/CD fundamentals:
 
@@ -10,19 +10,19 @@ Master GitLab CI/CD fundamentals:
 
 ---
 
-## 1. ⚙️ How GitLab CI/CD Works
+## 1. How GitLab CI/CD Works
 
 GitLab CI/CD runs jobs using a file named .gitlab-ci.yml in your repository’s root.
 
 When you push code:
 
 - GitLab reads .gitlab-ci.yml
-- Sends jobs to a GitLab Runner
+- Sends jobs to a **GitLab Runner**
 - Executes jobs in defined stages (e.g., build → test → deploy)
 
 ---
 
-## 2. 📄 Basic .gitlab-ci.yml Structure
+## 2. Basic .gitlab-ci.yml Structure
 
 ```yaml
 stages:
@@ -50,15 +50,15 @@ deploy_job:
 
 ---
 
-## 3. 🏃 GitLab Runners
+## 3. GitLab Runners
 
-**What is a Runner?**
+What is a Runner?
 
 A Runner is a GitLab agent that runs your CI jobs.
 
-- 🖥️ Shared Runner: Provided by GitLab.com
-- 🧰 Specific Runner: Self-hosted, configured to run for a project/group
-- 🐳 Docker-based Runner: Most popular and isolated
+- **🖥️ Shared Runner**: Provided by GitLab.com
+- **🧰 Specific Runner**: Self-hosted, configured to run for a project/group
+- **🐳 Docker-based Runner**: Most popular and isolated
 
 Register your own Runner (optional):
 
@@ -68,7 +68,7 @@ gitlab-runner register
 
 ---
 
-## 4. 🧰 Common CI/CD Keywords
+## 4. Common CI/CD Keywords
 
 | Key                       | Description                       |
 | ------------------------- | --------------------------------- |
@@ -82,7 +82,7 @@ gitlab-runner register
 
 ---
 
-## 5. 🎯 Real Example: Node.js App CI/CD
+## 5. Real Example: Node.js App CI/CD
 
 ```yaml
 image: node:18
@@ -119,7 +119,7 @@ deploy_to_staging:
 
 ---
 
-## 6. 🔐 CI/CD Variables and Secrets
+## 6. CI/CD Variables and Secrets
 
 - Go to: **Project** → **Settings** → **CI/CD** → **Variables**
 - Store tokens, API keys, passwords (never hardcode secrets!)
@@ -132,7 +132,7 @@ script:
 
 ---
 
-## 7. 🧪 Pipeline Triggers
+## 7. Pipeline Triggers
 
 | Trigger       | Use Case             |
 | ------------- | -------------------- |
@@ -154,7 +154,7 @@ manual_deploy:
 
 ---
 
-## 8. 📁 Artifacts vs Cache
+## 8. Artifacts vs Cache
 
 | Feature     | Use Case                                           |
 | ----------- | -------------------------------------------------- |
@@ -163,7 +163,7 @@ manual_deploy:
 
 ---
 
-## 9. 📦 Reusable Jobs with extends and include
+## 9. Reusable Jobs with extends and include
 
 - Modularize pipelines across projects using include
 - DRY your jobs using extends
@@ -179,7 +179,7 @@ job1:
 
 ---
 
-## 10. 🧪 Practice Project
+## 10. Practice Project
 
 CI for a Frontend App
 

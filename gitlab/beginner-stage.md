@@ -1,27 +1,27 @@
-# 🟢 Beginner Stage: GitLab Basics
+# Beginner Stage: GitLab Basics
 
-**🎯 Goal:**
+**Goal**
 
 Understand how to use GitLab as a Git repository platform, collaborate with others, and manage your code using basic Git operations and GitLab features.
 
 ---
 
-## 1. 🔍 What is GitLab?
+## 1. What is GitLab?
 
 GitLab is an all-in-one DevOps platform that includes:
 
-- Git-based version control (like GitHub)
-- Built-in CI/CD pipelines
+- **Git-based version control** (like GitHub)
+- **Built-in CI/CD pipelines**
 - Issue tracking, code review (merge requests), security scanning, and more.
 
 ✅ You can use:
 
-- GitLab.com (cloud-hosted)
+- **GitLab.com** (cloud-hosted)
 - Or self-host it on your own server (Omnibus, Helm, etc.)
 
 ---
 
-## 2. 🧱 Core Git Concepts (Used with GitLab)
+## 2. Core Git Concepts (Used with GitLab)
 
 | Term                   | Meaning                                                         |
 | ---------------------- | --------------------------------------------------------------- |
@@ -34,26 +34,26 @@ GitLab is an all-in-one DevOps platform that includes:
 
 ---
 
-## 3. 🚀 Getting Started Steps 
+## 3. Getting Started Steps 
 
-**✅ Step 1: Create a GitLab Account**
+**Step 1: Create a GitLab Account**
 
 Go to https://gitlab.com and sign up.
 
-**✅ Step 2: Create a New Repository (Project)**
+**Step 2: Create a New Repository (Project)**
 
 1. Click “New Project”
-2. Choose Blank Project
+2. Choose **Blank Project**
 3. Fill in name, visibility (Private/Public), and click “Create”
 
-**✅ Step 3: Set Up Git on Your Local Machine**
+**Step 3: Set Up Git on Your Local Machine**
 
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 ```
 
-**✅ Step 4: Connect GitLab with SSH or HTTPS**
+**Step 4: Connect GitLab with SSH or HTTPS**
 
 **SSH (recommended for push access)**:
 
@@ -66,7 +66,7 @@ git config --global user.email "you@example.com"
 
 ---
 
-## 4. 🛠️ Common Git Operations with GitLab
+## 4. Common Git Operations with GitLab
 
 ```bash
 # Clone a GitLab repo
@@ -85,7 +85,7 @@ git push origin feature-xyz
 
 ---
 
-## 5. 🔁 Merge Requests (MRs) – Code Review Flow
+## 5. Merge Requests (MRs) – Code Review Flow
 
 GitLab Merge Requests are like GitHub Pull Requests.
 
@@ -98,7 +98,7 @@ GitLab Merge Requests are like GitHub Pull Requests.
 
 ---
 
-## 6. 🐞 Issue Tracking and Collaboration
+## 6. Issue Tracking and Collaboration
 
 - **Issues**: Track bugs, tasks, and features (like Jira-lite)
 - **Milestones**: Group issues by release or sprint
@@ -108,7 +108,7 @@ GitLab Merge Requests are like GitHub Pull Requests.
 
 ---
 
-## 7. 📁 Other Useful GitLab Features
+## 7. Other Useful GitLab Features
 
 | Feature           | Purpose                       |
 | ----------------- | ----------------------------- |
@@ -119,7 +119,7 @@ GitLab Merge Requests are like GitHub Pull Requests.
 
 ---
 
-## 8. 🧪 Practice Project
+## 8. Practice Project
 
 **Goal**: Create a personal GitLab repo and push a local project.
 

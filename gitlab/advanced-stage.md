@@ -1,6 +1,6 @@
-# 🔴 Advanced Stage: GitLab CI/CD at Scale
+# Advanced Stage: GitLab CI/CD at Scale
 
-**🎯 Goal:**
+**Goal**
 
 Gain deep proficiency in GitLab CI/CD by mastering:
     
@@ -12,9 +12,9 @@ Gain deep proficiency in GitLab CI/CD by mastering:
 
 ---
 
-## 1. 🧱 Dynamic & Multi-Project Pipelines
+## 1. Dynamic & Multi-Project Pipelines
 
-**🔁 Parent–Child Pipelines**
+**Parent–Child Pipelines**
 
 Split complex pipelines into smaller parts:
 
@@ -25,7 +25,7 @@ trigger_child:
     include: child-pipeline.yml
 ```
 
-**🧩 Multi-Project Pipelines**
+**Multi-Project Pipelines**
 
 Coordinate multiple services:
 
@@ -38,9 +38,9 @@ trigger_remote:
 
 ---
 
-## 2. 🗂️ Pipeline Templates & Includes
+## 2. Pipeline Templates & Includes
 
-**🔄 Reusability with include**
+**Reusability with include**
 
 Share jobs across projects:
 
@@ -50,7 +50,7 @@ include:
     file: '/ci-templates/test.yml'
 ```
 
-**🧪 Use Cases:**
+**Use Cases**
 
 - Standardize build/deploy steps
 - Centralize security scans
@@ -58,14 +58,14 @@ include:
 
 ---
 
-## 3. ☸️ Kubernetes Integration
+## 3. Kubernetes Integration
 
-**🔧 Setup:**
+**Setup:**
 
 - Register GitLab Kubernetes agent or use GitLab-managed cluster integration
 - Add Kube config to CI/CD variables or use GitLab’s K8s agent
 
-**Example Deploy Job:**
+Example Deploy Job
 
 ```bash
 deploy_to_k8s:
@@ -76,14 +76,14 @@ deploy_to_k8s:
     name: production
 ```
 
-**🔄 Auto DevOps (optional):**
+**Auto DevOps (optional):**
 
 - GitLab can auto-detect app type
 - Provides build, test, code quality, review apps, deploy to K8s
 
 ---
 
-## 4. 🔐 Security & Compliance
+## 4. Security & Compliance
 
 | Feature                 | Description                       |
 | ----------------------- | --------------------------------- |
@@ -93,7 +93,7 @@ deploy_to_k8s:
 | **License Compliance**  | Detect GPL/MIT/etc.               |
 | **Secret Detection**    | Warn on tokens, passwords in code |
 
-**Example:**
+Example:
 
 ```yaml
 include:
@@ -103,14 +103,14 @@ include:
 
 ---
 
-## 5. 🔍 Observability and Control
+## 5. Observability and Control
 
-**📈 Pipeline Insights**
+**Pipeline Insights**
 
 - GitLab UI: “CI/CD → Analytics”
 - View pipeline success rates, durations
 
-**✅ Pipeline Rules & Conditions**
+**Pipeline Rules & Conditions**
 
 Smart control over pipeline logic:
 
@@ -126,9 +126,9 @@ job:
 
 ---
 
-## 6. 🤖 GitOps Workflows with GitLab
+## 6. GitOps Workflows with GitLab
 
-**🔁 Git as the source of truth:**
+**Git as the source of truth:**
 
 - Merge request triggers deployment
 - Infra code in version control (e.g., Terraform, Helm, Kustomize)
@@ -139,7 +139,7 @@ job:
 
 ---
 
-## 7. 🧠 AI & Automation Enhancements
+## 7. AI & Automation Enhancements
 
 - **Code Suggestions in MRs**
 - **Auto-resolving vulnerabilities**
@@ -148,7 +148,7 @@ job:
 
 ---
 
-## 8. 🧪 Practice Projects
+## 8. Practice Projects
 
 | Project              | Description                                       |
 | -------------------- | ------------------------------------------------- |
@@ -159,7 +159,7 @@ job:
 
 ---
 
-## 9. 📚 Optional: Self-Managed GitLab
+## 9. Optional: Self-Managed GitLab
 
 Learn GitLab server architecture:
 
