@@ -28,14 +28,11 @@ Set up Jenkins and access the web dashboard.
 
 **🔧 Recommended Installation Methods:**
 
-| Method                                                                                                                              | Best For                                 | Command / Steps |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------- |
-| **Docker** (✅ Recommended)                                                                                                          | Fast setup, clean test environments      |                 |
-| `docker run -p 8080:8080 jenkins/jenkins:lts`                                                                                       |                                          |                 |
-| **Native Install**                                                                                                                  | Long-term or production use              |                 |
-| Download `.war`, `.msi`, or `.pkg` from [https://www.jenkins.io/download](https://www.jenkins.io/download) and install accordingly. |                                          |                 |
-| **WAR File**                                                                                                                        | Lightweight, portable, no install needed |                 |
-| `java -jar jenkins.war`                                                                                                             |                                          |                 |
+| Method | Best For | Command / Steps |
+| --- | --- | --- |
+| **Docker** (✅ Recommended) | Fast setup, clean test environments      | `docker run -p 8080:8080 jenkins/jenkins:lts` |
+| **Native Install**          | Long-term or production use              | Download `.war`, `.msi`, or `.pkg` from [https://www.jenkins.io/download](https://www.jenkins.io/download) and install accordingly. |
+| **WAR File**                | Lightweight, portable, no install needed | `java -jar jenkins.war` |
 
 **🚀 First-Time Setup:**
 
